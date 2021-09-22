@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./index.js" defer></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="dashboard">
+      <article class="head">
+        <header class="head-header">
+          <img src="./images/image-jeremy.png" alt="black skin head of Jeremy" class="header-user-img">
+          <div class="header-user">
+            <p>Report for</p>
+            <p>Jeremy Robson</p>
+          </div>
+        </header>
+        <nav class="head-nav" data-nav>
+          <p class="nav-item">Daily</p>
+          <p class="nav-item">Weekly</p>
+          <p class="nav-item">Monthly</p>
+        </nav>
+      </article>
+
+      <article class="activity bg-work">
+        <img src="./images/icon-work.svg" alt="" class="activity-img">
+        <section class="activity-details">
+          <img src="./images/icon-ellipsis.svg" alt="" class="details-ellipsis">
+          <p class="details-type">Work</p>
+          <p class="details-time" data-activity-time='work'>5 hrs</p>
+          <p class="details-prev-time" data-activity-prevtime='work'>Previous - 7 hrs</p>
+        </section>
+      </article>
+
+
+      <article class="activity bg-play">
+        <img src="./images/icon-play.svg" alt="" class="activity-img">
+        <section class="activity-details">
+          <img src="./images/icon-ellipsis.svg" alt="" class="details-ellipsis">
+          <p class="details-type">Play</p>
+          <p class="details-time" data-activity-time='play'>1 hr</p>
+          <p class="details-prev-time" data-activity-prevtime='play'>Previous - 2 hrs</p>
+        </section>
+      </article>
+
+      <article class="activity bg-study">
+        <img src="./images/icon-study.svg" alt="" class="activity-img">
+        <section class="activity-details">
+          <img src="./images/icon-ellipsis.svg" alt="" class="details-ellipsis">
+          <p class="details-type">Study</p>
+          <p class="details-time" data-activity-time='study'>0 hrs</p>
+          <p class="details-prev-time" data-activity-prevtime='study'>Previous - 1 hr</p>
+        </section>
+      </article>
+
+
+      <article class="activity bg-exercise">
+        <img src="./images/icon-exercise.svg" alt="" class="activity-img">
+        <section class="activity-details">
+          <img src="./images/icon-ellipsis.svg" alt="" class="details-ellipsis">
+          <p class="details-type">Exercise</p>
+          <p class="details-time" data-activity-time='exercise'>1 hr</p>
+          <p class="details-prev-time" data-activity-prevtime='exercise'>Previous - 1 hr</p>
+        </section>
+      </article>
+
+
+      <article class="activity bg-social">
+        <img src="./images/icon-social.svg" alt="" class="activity-img">
+        <section class="activity-details">
+          <img src="./images/icon-ellipsis.svg" alt="" class="details-ellipsis">
+          <p class="details-type">Social</p>
+          <p class="details-time" data-activity-time='social'>1 hr</p>
+          <p class="details-prev-time" data-activity-prevtime='social'>Previous - 3 hrs</p>
+        </section>
+      </article>
+
+
+
+      <article class="activity bg-self-care">
+        <img src="./images/icon-self-care.svg" alt="" class="activity-img">
+        <section class="activity-details">
+          <img src="./images/icon-ellipsis.svg" alt="" class="details-ellipsis">
+          <p class="details-type">Self Care</p>
+          <p class="details-time" data-activity-time='self care'>0 hrs</p>
+          <p class="details-prev-time" data-activity-prevtime='self care'>Previous - 1 hr</p>
+        </section>
+      </article>
+    </main>
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+
+</html>
