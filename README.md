@@ -12,7 +12,7 @@ Users should be able to:
 - Switch between viewing Daily, Weekly, and Monthly stats
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live: [Add live site URL here](https://lukasp-ghub.github.io/time-tracking-dashboard/)
 
 ### Stack
 - HTML
