@@ -110,7 +110,7 @@ const data = [
 let prevActiveLink;
 
 const activitiesMap = data.map((item) => {
-  console.log(actTimes.filter((elem) => elem.dataset.activityTime.toLowerCase() === item.title.toLowerCase()));
+
   return {
     activity: item.title.toLowerCase(),
     timeframes: item.timeframes,
@@ -121,6 +121,7 @@ const activitiesMap = data.map((item) => {
 
 (() => {
   nav.addEventListener('click', (e) => {
+    if (!e.target.dataset.tab) return;
     const timeframe = e.target.textContent.toLowerCase();
     e.target.classList.toggle('active');
     prevActiveLink?.classList.toggle('active');
