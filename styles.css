@@ -60,16 +60,27 @@ body{
 .head-nav{
   grid-area: nav;
   display: flex;
+}
+
+.head-item-list{
+  flex-basis: 100%;
+  list-style: none;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color:var(--pale-blue);
+  
 }
 
 .active{
   color: white;
 }
 
-.nav-item:hover{
+.nav-link{
+  color:var(--pale-blue);
+  text-decoration: none;
+}
+
+.nav-link:hover{
   color: white;
   cursor: pointer;
 }
