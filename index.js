@@ -110,7 +110,6 @@ const data = [
 let prevActiveLink;
 
 const activitiesMap = data.map((item) => {
-
   return {
     activity: item.title.toLowerCase(),
     timeframes: item.timeframes,
@@ -119,17 +118,17 @@ const activitiesMap = data.map((item) => {
   }
 });
 
-(() => {
-  nav.addEventListener('click', (e) => {
-    if (!e.target.dataset.tab) return;
-    const timeframe = e.target.textContent.toLowerCase();
-    e.target.classList.toggle('active');
-    prevActiveLink?.classList.toggle('active');
-    prevActiveLink = e.target;
-    activitiesMap.forEach(item => {
-      item.actTimeElem[0].textContent = `${item.timeframes[timeframe].current} hrs`;
-      item.actPrevTimeElem[0].textContent = `Previus - ${item.timeframes[timeframe].previous} hrs`;
-    })
-  });
 
-})()
+nav.addEventListener('click', (e) => {
+  if (!e.target.dataset.tab) return;
+  const timeframe = e.target.textContent.toLowerCase();
+  e.target.classList.toggle('active');
+  prevActiveLink?.classList.toggle('active');
+  prevActiveLink = e.target;
+  activitiesMap.forEach(item => {
+    item.actTimeElem[0].textContent = `${item.timeframes[timeframe].current} hrs`;
+    item.actPrevTimeElem[0].textContent = `Previous - ${item.timeframes[timeframe].previous} hrs`;
+  })
+});
+
+
