@@ -127,6 +127,7 @@ body{
   padding: 0 1.5em;
   border-radius: 20px;
   background-color: var(--dark-blue);
+  transition: background-color .3s linear;
 }
 .activity-details:hover{
   background-color: var(--desaturated-blue);
@@ -200,12 +201,13 @@ body{
     max-height: 70px;
   }
 
-  .head-nav{
+  .head-item-list{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     padding-left: 1.5em;
-  }  
+  }
+
   .activity-details{
     align-items: center;
     grid-template-columns: 50% 50%;
